@@ -22,9 +22,9 @@ function markerSize(magnitude) {
 
 // create object for the color 
 function circleColor(depth) {
-    if (depth <= 70) return "red"
+    if (depth <= 70) return "yellow"
     else if (depth <= 300) return "orange"
-    else return "yellow"
+    else return "red"
 }
 
 // read in earthquake data 
@@ -66,7 +66,7 @@ legend.onAdd = function () {
     var div = L.DomUtil.create('div', 'info legend');
 
     // create magnitude scale
-    var scale = [-10, 10, 30, 50, 70, 90];
+    var scale = [0,70, 300,];
 
     // create corresponding color scale 
     var colors = ['#74F906', '#D4F906','#F9D106', '#F9A406', '#F95B06', '#F91206'];
