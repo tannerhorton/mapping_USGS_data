@@ -6,7 +6,7 @@ var map = L.map("map", {
     center: [
       37.091, -95.713
     ],
-    zoom: 4.5,
+    zoom: 2,
   });
 
 // Initialize all the LayerGroups that we'll use.
@@ -17,14 +17,14 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // create object for the magnitude
 function markerSize(magnitude) {
-    return magnitude * 6
+    return magnitude * 123
   }
 
 // create object for the color 
 function circleColor(depth) {
-    if (depth <= 70) return "yellow"
-    else if (depth <= 300) return "orange"
-    else return "red"
+    if (depth <= 70) return '#D4F906'
+    else if (depth <= 300) return '#F9A406'
+    else return '#F91206'
 }
 
 // read in earthquake data 
@@ -69,7 +69,7 @@ legend.onAdd = function () {
     var scale = [0,70, 300,];
 
     // create corresponding color scale 
-    var colors = ['#74F906', '#D4F906','#F9D106', '#F9A406', '#F95B06', '#F91206'];
+    var colors = ['#D4F906', '#F9A406', '#F91206'];
 
     // for loop to match scale and colors 
     for (var i = 0; i < scale.length; i++) {
