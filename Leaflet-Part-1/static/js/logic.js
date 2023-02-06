@@ -20,11 +20,18 @@ function markerSize(magnitude) {
     return magnitude * 123
   }
 
+// // create object for the color 
+// function circleColor(magnitude) {
+//     if (magnitude <= 5) return '#D4F906'
+//     else if (magnitude <= 6) return '#F9A406'
+//     else return '#F91206'
+// }
+
 // create object for the color 
 function circleColor(depth) {
-    if (depth <= 70) return '#D4F906'
-    else if (depth <= 300) return '#F9A406'
-    else return '#F91206'
+  if (depth <= 70) return '#D4F906'
+  else if (depth <= 300) return '#F9A406'
+  else return '#F91206'
 }
 
 // read in earthquake data 
@@ -55,23 +62,24 @@ d3.json(url).then(function(data) {
     })
 });
 
-// create legend
+// insert legend
 var legend = L.control({ 
     position: 'bottomright' 
   });
 
-// function to add legend info
+// create function to add legend info 
 legend.onAdd = function () {
 
     var div = L.DomUtil.create('div', 'info legend');
 
-    // create magnitude scale
+    // insert magnitude scale
+    // var scale = [5, 6, 7];
     var scale = [0,70, 300,];
 
-    // create corresponding color scale 
+    // insert color scale that corresponds to previous code 
     var colors = ['#D4F906', '#F9A406', '#F91206'];
 
-    // for loop to match scale and colors 
+    // for loop to match scale and colors, *** this is not working properly, come back to correct later. 
     for (var i = 0; i < scale.length; i++) {
 
         div.innerHTML += "<i style='background: " + colors[i] + "'></i> "
