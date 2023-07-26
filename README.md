@@ -1,7 +1,7 @@
 # leaflet-challenge
 Visualize USGS data that will allow them to better educate the public and other government organizations.
 
-Background
+## Background
 The United States Geological Survey, or USGS for short, is responsible for providing scientific data about natural hazards, the health of our ecosystems and environment, and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes.
 
 The USGS is interested in building a new set of tools that will allow them to visualize their earthquake data. They collect a massive amount of data from all over the world each day, but they lack a meaningful way of displaying it. In this challenge, you have been tasked with developing a way to visualize USGS data that will allow them to better educate the public and other government organizations (and hopefully secure more funding) on issues facing our planet.
@@ -17,7 +17,8 @@ This Challenge uses both HTML and JavaScript, so be sure to add all the necessar
 
 Push the above changes to GitHub.
 
-Instructions
+## Structure
+
 The instructions for this activity are broken into two parts:
 
 Part 1: Create the Earthquake Visualization
@@ -44,6 +45,8 @@ Hint: The depth of the earth can be found as the third coordinate for each earth
 
 Include popups that provide additional information about the earthquake when its associated marker is clicked.
 
+# Objective:
+
 Create a legend that will provide context for your map data.
 
 Your visualization should look something like the preceding map.
@@ -55,7 +58,8 @@ This part is completely optional; you can complete this part as a way to challen
 
 The following image is an example screenshot of what you should produce:
 
-5-Advanced
+# Methodology:
+
 Perform the following tasks:
 
 Plot the tectonic plates dataset on the map in addition to the earthquakes.
@@ -78,7 +82,7 @@ Markers with size corresponding to earthquake magnitude (10 points)
 
 A legend showing the depth and their corresponding color (10 points)
 
-Data Points (40 points)
+# Conclusion:
 Data points scale with magnitude level (10 points)
 
 Data points colors change with depth level (10 points)
