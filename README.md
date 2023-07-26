@@ -1,4 +1,4 @@
-# Mapping United States Geological Survey Earthquake Data
+# Mapping US Geological Survey Earthquake Data
 Visualize USGS data that will allow them to better educate the public and other government organizations using leaflet.
 
 ## Background
